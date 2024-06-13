@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <!-- <link rel="stylesheet" href="./assets/fonts/Figtree-VariableFont_wght.ttf"> -->
+
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url(./assets/fonts/Figtree-VariableFont_wght.ttf);
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: "Figtree", sans-serif;
+    }
+
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    .container--fluid {
+      width: 100vw;
+      height: 100vh;
+      padding: 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: hsl(47, 88%, 63%);
+    }
+
+    .card--layout {
+      background-color: #ffff;
+      border-radius: 25px;
+      box-shadow: 15px 15px 0px 0px #000000;
+      width: 250px;
+      height: auto;
+      padding: 15px;
+      text-align: left;
+      font-family: system-ui;
+
+      & .subtitle--card {
+        width: fit-content;
+        padding: 5px;
+        margin: 5px 0px;
+        background-color: #f4d04e;
+        border-radius: 5px;
+      }
+
+      & .year--card {
+        font-size: 10px;
+        margin: 10px 0px;
+      }
+
+      & .title--card {
+        margin: 10px 0px;
+        font-size: 16px;
+        font-weight: 800;
+      }
+
+      & .title--card:hover {
+        color: #f4d04e;
+        cursor: pointer;
+      }
+
+      & .para--card {
+        font-size: 12px;
+        font-weight: lighter;
+        color: #a8a8a8;
+        padding: 5px 0px;
+        margin: 10px 0px;
+      }
+
+      & .card--profile {
+        display: flex;
+        align-items: center;
+        column-gap: 10px;
+
+        & img {
+          width: 30px;
+          height: auto;
+        }
+        & .profile--name {
+          font-size: 11px;
+          font-weight: 800;
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    .card--layout img {
+      width: 100%;
+      max-height: 250px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Learning
+
+  Published 21 Dec 2023
+
+  HTML & CSS foundations
+
+  These languages are the backbone of every website, defining structure, content, and presentation.
+
+  Greg Hooper
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+  <section class="bg--section">
+    <div class="container--fluid">
+      <div class="card--layout">
+        <img src="./assets/images/illustration-article.svg" alt="svg">
+        <h6 class="subtitle--card">Learning</h6>
+        <h5 class="year--card">Published 21 Dec 2023</h5>
+        <h4 class="title--card">HTML & CSS foundations</h4>
+        <p class="para--card">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+        <span class="card--profile">
+          <img src="./assets/images/image-avatar.webp" alt="profile">
+          <span class="profile--name">greg hooper</span>
+        </span>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>
